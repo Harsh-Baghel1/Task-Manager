@@ -1,16 +1,111 @@
-# React + Vite
+# Task Manager (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient **Task Manager application** built with **React and Vite**.
+This app allows users to create, manage, search, and store tasks locally in the browser.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+* Add new tasks
+* Delete tasks
+* Mark tasks as completed
+* Search tasks
+* Categorize tasks (Work / Personal)
+* Data persistence using **localStorage**
+* Responsive and simple UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **React** – Frontend library
+* **Vite** – Fast development build tool
+* **JavaScript (ES6+)**
+* **CSS**
+
+---
+
+##  Project Structure
+
+```
+task-manager
+│
+├── src
+│   ├── components
+│   │   ├── TaskForm.jsx
+│   │   ├── TaskItem.jsx
+│   │   └── TaskList.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── style.css
+│
+├── public
+├── package.json
+└── README.md
+```
+
+---
+
+##  Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/your-username/task-manager.git
+```
+
+### 2️⃣ Navigate into the project folder
+
+```
+cd task-manager
+```
+
+### 3️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 4️⃣ Run the development server
+
+```
+npm run dev
+```
+
+The app will start at:
+
+```
+http://localhost:5173
+```
+
+---
+
+##  How It Works
+
+* **useState** manages tasks and search state.
+* **useEffect** loads and saves tasks to localStorage.
+* Tasks are filtered based on the search input.
+* Components are structured for clean separation of logic.
+
+---
+
+##  Future Improvements
+
+Planned enhancements:
+
+* Edit existing tasks
+* Filter (All / Completed / Pending)
+* Drag and drop task ordering
+* Dark mode
+* Task due dates
+* Improved UI with Tailwind or Bootstrap
+
+---
+
+##  License
+
+This project is open-source and available under the MIT License.
+
+---
